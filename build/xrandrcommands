@@ -1,0 +1,7 @@
+#turning off monitor
+xrandr --output DP-3 --off
+
+#turning back on
+xrandr --output DP-3 --mode 1920x1080 --right-of DP-2
+
+xrandr -q | grep -w connected

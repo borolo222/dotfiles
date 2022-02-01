@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/borolo/.config/bspwm/background/bg.jpg' 
