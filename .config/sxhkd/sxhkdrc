@@ -22,7 +22,7 @@ super + w
 	rofi -show window
 
 # Power Menu
-super + shift + Escape
+ctrl + super + Escape
 	rofi -show power-menu -modi "power-menu:~/.local/bin/rofi-power-menu" -theme powereb
 
 # Open Config files in codium
