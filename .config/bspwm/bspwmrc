@@ -1,0 +1,75 @@
+#! /bin/sh
+
+
+# Startup
+#bash ~/.config/bspwm/clean &
+killall -q synergys
+
+
+
+bash ~/.config/polybar/launch.sh &
+
+
+# Sxhkd
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#Picom
+picom --config ~/.config/picom/picom.conf &
+
+# set keyboard
+xsetroot -layout us
+
+#Notification Daemon
+exec_always --no-startup-id dunst &
+flameshot &
+lxpolkit &
+
+
+# wallpaper
+feh --bg-fill ~/.config/bspwm/background/bg.jpg &
+
+# Monitor Config
+bspc monitor DP-2 -d 1 2 3 4 5 6
+bspc monitor DP-3 -d 7 8 9 10
+
+bspc desktop -f ^1
+
+bspc config border_width         1
+bspc config top_padding         34
+bspc config window_gap           6
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+bspc config remove_disabled_monitor true
+bspc config remove_unplugged_monitors true
+bspc config merge_overlapping_monitors true
+
+bspc config focused_border_color #81A1C1
+bspc config active_border_color #81A1C1
+bspc config normal_border_color #4C566A
+
+
+
+bspc desktop -f ^10
+sleep 2
+synergy -f
+sleep 1
+bspc desktop -f ^1
+
+
+#bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Brave-browser desktop='^2' follow=on
+bspc rule -a mplayer2 state=floating
+#bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Thunar desktop='^3' follow=on
+bspc rule -a pavucontrol state=floating follow=on
+
+
+
+
+
+
+
+

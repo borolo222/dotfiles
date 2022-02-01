@@ -1,0 +1,32 @@
+#! /usr/bin/env bash
+
+#Menu para correr los confis en bscodium
+
+
+options="bspwm\nsxhkd\nrofi\npolybar\nbashrc"
+
+chosen="$(echo -e  "$options" | rofi -dmenu -p)"
+
+echo $chosen
+case $chosen in
+	bspwm)
+		#terminator
+		#delay 2
+		#bspc node -f last
+		codium ~/.config/bspwm/bspwmrc
+		;;
+	sxhkd)
+		codium ~/.config/sxhkd/sxhkdrc
+		;;
+	rofi)
+		codium ~/.config/rofi/config.rasi
+		;;
+	polybar)
+		codium ~/.config/polybar/config
+		;;
+	bashrc)
+		codium ~/.bashrc
+		;;
+esac
+
+

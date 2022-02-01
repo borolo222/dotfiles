@@ -1,0 +1,18 @@
+[2022-01-29 18:32:47.132] [sharedprocess] [info] Installing extension: arcticicestudio.nord-visual-studio-code
+[2022-01-29 18:32:48.012] [sharedprocess] [info] Downloaded extension: arcticicestudio.nord-visual-studio-code /home/borolo/.config/VSCodium/CachedExtensionVSIXs/arcticicestudio.nord-visual-studio-code-0.15.0
+[2022-01-29 18:32:48.040] [sharedprocess] [info] Extracted extension to /home/borolo/.vscode-oss/extensions/.be24eb10-34c1-410f-bdc3-5ed9ce8b748e: arcticicestudio.nord-visual-studio-code
+[2022-01-29 18:32:48.046] [sharedprocess] [info] Renamed to /home/borolo/.vscode-oss/extensions/arcticicestudio.nord-visual-studio-code-0.15.0
+[2022-01-29 18:32:48.048] [sharedprocess] [info] Extracting completed. arcticicestudio.nord-visual-studio-code
+[2022-01-29 18:32:48.049] [sharedprocess] [info] Extension installed successfully: arcticicestudio.nord-visual-studio-code
+[2022-01-29 18:33:58.747] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-01-29 18:33:59.771] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2022-01-29 18:34:04.239] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter /home/borolo/.config/VSCodium/CachedExtensionVSIXs/ms-toolsai.jupyter-2021.11.1001552333
+[2022-01-29 18:34:04.684] [sharedprocess] [info] Extracted extension to /home/borolo/.vscode-oss/extensions/.960827d8-c475-4e3a-aaca-68619ebc9cf4: ms-toolsai.jupyter
+[2022-01-29 18:34:04.689] [sharedprocess] [info] Renamed to /home/borolo/.vscode-oss/extensions/ms-toolsai.jupyter-2021.11.1001552333
+[2022-01-29 18:34:04.692] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2022-01-29 18:34:08.173] [sharedprocess] [info] Downloaded extension: ms-python.python /home/borolo/.config/VSCodium/CachedExtensionVSIXs/ms-python.python-2021.12.1559732655
+[2022-01-29 18:34:09.479] [sharedprocess] [info] Extracted extension to /home/borolo/.vscode-oss/extensions/.e23faf16-52f0-4f77-a6a6-83b0e016fc3c: ms-python.python
+[2022-01-29 18:34:09.488] [sharedprocess] [info] Renamed to /home/borolo/.vscode-oss/extensions/ms-python.python-2021.12.1559732655
+[2022-01-29 18:34:09.491] [sharedprocess] [info] Extracting completed. ms-python.python
+[2022-01-29 18:34:09.493] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-01-29 18:34:09.493] [sharedprocess] [info] Extension installed successfully: ms-python.python

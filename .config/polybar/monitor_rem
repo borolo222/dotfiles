@@ -1,0 +1,40 @@
+#! /bin/sh
+
+internal_monitor=DP-2
+external_monitor=DP-3
+
+
+
+monitor_remove() {
+	bspc monitor $internal_monitor -a Desktop # Temp desktop because one desktop required per monitor
+
+	# Move everything to external monitor to reorder desktops
+	for desktop in $(bspc query -D -m $internal_monitor)
+	do
+		bspc desktop $desktop --to-monitor $external_monitor
+	done
+
+	# Now move everything back to internal monitor
+	bspc monitor $external_monitor -a Desktop # Temp desktop
+
+	for desktop in $(bspc query -D -m $external_monitor)
+	do
+		bspc desktop $desktop --to-monitor $internal_monitor
+	done
+
+	bspc desktop Desktop --remove # Remove temp desktops
+}
+
+monitor_remove
+
+# Terminate already running bar instances
+killall -q polybar
+#killall -q synergys
+# Wait until the processes have been shut down
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+
+polybar -r base &
+#polybar -r ext &
+echo "Polybar launched..."
+
+xrandr --output DP-3 --off

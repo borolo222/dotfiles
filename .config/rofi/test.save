@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+options="bspwm\nsxhkd\nrofi\npolybar\nbashrc"
+
+chosen="$(echo -e  "$options" | rofi -dmenu -p)"
+
+echo $chosen
+case $chosen in
+	bspwm)
+		 
+		nano ~/.config/bspwm/bspwmrc
+		;;
+	sxhkd)
+		echo "sxxx"
+		;;
+esac
+
+
