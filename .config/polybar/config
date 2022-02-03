@@ -30,6 +30,8 @@ shade13 = #D08770
 shade14 = #EBCB8B
 shade15 = #A3BE8C
 shade16 = #B48EAD
+shade17 = #242831
+
 
 [bar/base]
 monitor = DP-2
