@@ -23,6 +23,7 @@ xsetroot -layout us
 exec_always --no-startup-id dunst &
 flameshot &
 lxpolkit &
+playerctld daemon &
 
 
 # wallpaper

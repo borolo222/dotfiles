@@ -5,7 +5,15 @@ if pgrep -x rofi; then
 fi
 
 IPATH=$HOME/.config/bspwm/background
+status=$(playerctl status || true)
 
+
+# Pauses all things playing
+if [ "$status" == "Playing" ]; then
+	playerctl pause
+fi
+#Pauses dunst
+dunstctl set-paused true
 
 i3lock -n -c 00000000 -F -e -i "$IPATH/small.jpg" \
 	--radius 110 \
@@ -38,4 +46,9 @@ i3lock -n -c 00000000 -F -e -i "$IPATH/small.jpg" \
 	--keylayout 1                \
 
 loginctl lock-session
+
+if [ "$status" == "Playing" ]; then
+	playerctl play
+fi
+dunstctl set-paused false
 	

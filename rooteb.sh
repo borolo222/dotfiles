@@ -25,7 +25,7 @@ apt update
 # Add base packages
 apt install unzip picom bspwm polybar sddm rofi terminator thunar flameshot neofetch sxhkd git lxpolkit lxappearance xorg -y
 apt install libqt5svg5 qml-module-qtquick-controls papirus-icon-theme feh -y
-apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin -y
+apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl -y
 apt install qemu-guest-agent apt-transport-https curl colortest -y
 apt install neovim cifs-utils kcharselect htop wmctrl graphicsmagick virt-manager lm-sensors -y
 
