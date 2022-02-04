@@ -4,8 +4,10 @@ if pgrep -x rofi; then
 	killall rofi
 fi
 
+IPATH=$HOME/.config/bspwm/background
 
-i3lock -n -c 00000000 -t -e\
+
+i3lock -n -c 00000000 -F -e -i "$IPATH/small.jpg" \
 	--radius 110 \
 	--ring-width 12 \
 	--inside-color=4C566A1A \
@@ -35,5 +37,5 @@ i3lock -n -c 00000000 -t -e\
 	--date-str="%A, %m %Y"       \
 	--keylayout 1                \
 
-#loginctl lock-session
+loginctl lock-session
 	
