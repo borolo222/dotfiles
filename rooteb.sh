@@ -73,6 +73,7 @@ cp .profile /home/$username
 cp .fehhbg /home/$username
 cp .dir_colors /home/$username
 cp .fonts.conf /home/$username
+source .bashrc
 
 cp -R .config/* /home/$username/.config/
 cp -R .local/* /home/$username/.local/

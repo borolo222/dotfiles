@@ -183,3 +183,4 @@ export EDITOR='nvim'
 
 # alias for git bare
 alias config='/usr/bin/git --git-dir=/home/borolo/.cfg/ --work-tree=/home/borolo'
+alias confibor='config push -u origin main'
