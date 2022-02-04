@@ -15,7 +15,7 @@
     show_titlebar = False
   [[nord]]
     background_color = "#11151d"
-    background_darkness = 0.75
+    background_darkness = 0.65
     background_type = transparent
     cursor_color = "#D8DEE9"
     font = FiraCode Nerd Font Mono Light 11

@@ -1,0 +1,4 @@
+@import 'colors.css';
+VteTerminal, TerminalScreen, vte-terminal {
+        padding: 8px;
+}
