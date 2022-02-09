@@ -18,7 +18,7 @@ cd builddir || exit
 # Add base packages
 apt install unzip picom bspwm polybar sddm rofi terminator thunar flameshot neofetch sxhkd git lxpolkit lxappearance xorg arandr netselect-apt -y
 apt install libqt5svg5 qml-module-qtquick-controls papirus-icon-theme feh -y
-apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl -y
+apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl fonts-firacode -y
 apt install qemu-guest-agent apt-transport-https curl colortest nfs-common -y
 apt install neovim cifs-utils kcharselect htop wmctrl graphicsmagick virt-manager lm-sensors -y
 
@@ -36,10 +36,9 @@ git clone https://github.com/Raymo111/i3lock-color.git
 cd /usr/share/themes/ || exit
 git clone https://github.com/EliverLara/Nordic.git
 
-# Fira Code Nerd Font variant needed
+# Fira Code Nerd Font variant needed and Noto Symbols
 cd "$builddir" || exit
 
-#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d /usr/share/fonts
 
