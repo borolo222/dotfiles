@@ -1,0 +1,7 @@
+[ColorScheme]
+active_colors=#ffd8dee9, #ff3b4252, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ffd8dee9, #ffd8dee9, #ffd8dee9, #ff3d3d3d, #ff2e3440, #ffe7e4e0, #ff5e81ac, #fff9f9f9, #ff81a1c1, #ffbf616a, #ff5c5b5a, #ffd8dee9, #ff3f3f36, #ffd8dee9, #80e5e9fc
+disabled_colors=#ff808080, #ff3b4252, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ff808080, #ffd8dee9, #ff808080, #ff3d3d3d, #ff2e3440, #ffe7e4e0, #ff5e81ac, #ff808080, #ff81a1c1, #ffbf616a, #ff5c5b5a, #ffd8dee9, #ff3f3f36, #ffd8dee9, #80e5e9fc
+inactive_colors=#ffd8dee9, #ff3b4252, #ff979797, #ff5e5c5b, #ff302f2e, #ff4a4947, #ffd8dee9, #ffd8dee9, #ffd8dee9, #ff3d3d3d, #ff2e3440, #ffe7e4e0, #ff5e81ac, #fff9f9f9, #ff81a1c1, #ffbf616a, #ff5c5b5a, #ffd8dee9, #ff3f3f36, #ffd8dee9, #80e5e9fc
+
+# vim:ft=dosini
+
