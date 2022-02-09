@@ -42,6 +42,13 @@ cd "$builddir" || exit
 #wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d /usr/share/fonts
+
+wget "https://fonts.google.com/download?family=Noto%20Sans%20Symbols%202" -O NotoSansSymbols2.zip
+unzip -o NotoSansSymbols2.zip -d /usr/share/fonts
+
+wget "https://fonts.google.com/download?family=Noto%20Sans%20Symbols" -O NotoSansSymbols.zip
+unzip -o NotoSansSymbols.zip -d /usr/share/fonts
+
 #wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 #unzip Meslo.zip -d /usr/share/fonts
 fc-cache -vf

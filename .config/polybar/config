@@ -60,12 +60,13 @@ module-margin-right = 0
 
 font-0 = Fira Code:pixelsize=12;4
 font-1 = FiraCode NF:size=18;4
-font-2 = Font Awesome 5 Brands:style=Regular:size=12;4
-font-3 = Font Awesome 5 Free:style=Solid:size=12;4
-font-4 = Font Awesome 5 Free:style=Regular:size=12;4
-font-5 = Noto Color Emoji:style=Regular:scale=18;4
-font-6 = FontAwesome:style=Regular:size=12;4
-font-7 = OpenSymbol:style=Regular:size=16;4
+;font-2 = Font Awesome 5 Brands:style=Regular:size=12;4
+;font-3 = Font Awesome 5 Free:style=Solid:size=12;4
+;font-4 = Font Awesome 5 Free:style=Regular:size=12;4
+;font-5 = Noto Color Emoji:style=Regular:scale=18;4
+;font-6 = FontAwesome:style=Regular:size=12;4
+;font-7 = OpenSymbol:style=Regular:size=16;4
+;font-8 = Noto Sans Symbols2:style=Regular:size=18;6
 
 modules-left = launcher sep left bspwm right sep left bsplayout bspmode right sep xwindow
 ;modules-center =
@@ -139,7 +140,7 @@ content-padding = 1
 click-left = "rofi -show drun -theme sidetabeb"
 ;content = ""
 ;content = " "
-content ="  "
+content =" "
 ;content= ""
 
 click-right = "rofi -show window"
@@ -690,7 +691,7 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/fan-speed.sh
 interval = 10
 
-format-prefix = " "
+format-prefix = " "
 
 format-prefix-foreground = ${colors.shade9}
 format-background = ${colors.shade2}

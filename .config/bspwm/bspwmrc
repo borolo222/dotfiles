@@ -75,7 +75,7 @@ bspc rule -a Synergy desktop='^10'
 ##Startup
 
 #Picom
-picom --config ~/.config/picom/picom.conf &
+picom --config ~/.config/picom/picom.conf --experimental-backends &
 
 # set keyboard
 #xsetroot -layout us
@@ -97,17 +97,10 @@ playerctld daemon &
 feh --bg-fill ~/.config/bspwm/background/bg.jpg &
 
 # Blur background
-~/.config/feh-blur -b 4 -d &
+#~/.config/feh-blur -b 4 -d &
 
 # Synergy
 synergy &
-
-
-
-
-
-
-
 
 
 
