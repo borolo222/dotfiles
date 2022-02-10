@@ -16,7 +16,7 @@ builddir=$(pwd)
 cd builddir || exit
 
 # Add base packages
-apt install unzip picom bspwm polybar sddm rofi terminator thunar flameshot neofetch sxhkd git lxpolkit lxappearance xorg arandr netselect-apt -y
+apt install unzip picom bspwm polybar sddm rofi terminator thunar flameshot neofetch sxhkd git lxpolkit lxappearance xorg arandr netselect-apt qt5ct -y
 apt install libqt5svg5 qml-module-qtquick-controls papirus-icon-theme feh -y
 apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl fonts-firacode -y
 apt install qemu-guest-agent apt-transport-https curl colortest nfs-common -y
@@ -88,6 +88,7 @@ cp .profile /home/"$username"
 cp .fehbg /home/"$username"
 cp .dir_colors /home/"$username"
 cp .fonts.conf /home/"$username"
+cp build/environment /etc/environment
 
 cp -R .config/* /home/"$username"/.config/
 cp -R .local/* /home/"$username"/.local/
@@ -108,4 +109,3 @@ chown -R "$username":"$username" /home/"$username"
 
 ## Pycom
 # change vsync to false
-
