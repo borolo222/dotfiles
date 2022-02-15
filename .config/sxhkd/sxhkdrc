@@ -7,7 +7,7 @@ super + Return
 	terminator
 
 super + x
-	terminator
+	kitty
 
 # Creates new terminal with same pwd
 super + shift + Return

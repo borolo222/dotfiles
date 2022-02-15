@@ -1,0 +1,6 @@
+Playerctl
+    https://github.com/altdesktop/playerctl
+i3lock-color
+    https://github.com/Raymo111/i3lock-color
+Abdullah
+    https://gitlab.com/Abdullah/cfg/-/tree/master/
