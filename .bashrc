@@ -113,6 +113,11 @@ alias mktar='tar -cvf'
 alias mkbz2='tar -cvjf'
 alias mkgz='tar -cvzf'
 
+# Alias for bat
+alias cat='batcat'
+alias cata='batcat -A'
+
+
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
 ex ()

@@ -31,6 +31,7 @@ apt install libqt5svg5 qml-module-qtquick-controls papirus-icon-theme feh kitty 
 apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl fonts-firacode -y
 apt install qemu-guest-agent apt-transport-https curl colortest nfs-common -y
 apt install neovim cifs-utils kcharselect htop wmctrl graphicsmagick virt-manager lm-sensors -y
+apt install bat vifm -y
 
 ## Install I3lock and dependencies
 apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util0-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y
@@ -116,6 +117,8 @@ cp -R .local/* /home/"$username"/.local/
 # Change permisions
 chown -R "$username":"$username" /home/"$username"
 
+# Colorize man pages with bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ### Additional steps for VMS
 ## Polybar
