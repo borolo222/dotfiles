@@ -103,6 +103,9 @@ cd "$builddir" || exit
 # Create directories
 mkdir -p /home/"$username"/.config
 mkdir -p /home/"$username"/.local
+mkdir -p /home/"$username"/.config/vifm/colors
+
+
 # copy files
 cp .bashrc /home/"$username"
 cp .profile /home/"$username"
@@ -114,6 +117,8 @@ cp build/environment /etc/environment
 # copy directories
 cp -R .config/* /home/"$username"/.config/
 cp -R .local/* /home/"$username"/.local/
+# copy vifm colors
+cp .config/vifm/ebnord.vifm .config/vifm/colors/ebnord.vifm
 # Change permisions
 chown -R "$username":"$username" /home/"$username"
 
