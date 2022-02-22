@@ -98,7 +98,7 @@ alias lla='ls -lAh'
 #exa
 alias lax='exa -alh -L 1 --icons --color auto'
 alias llx='exa -abghHliS --icons'
-alias lx='exa -a --icons'
+alias lx='exa -ah --icons --group-directories-first'
 
 #alias l='ls -CF'
 alias vim='nvim'
@@ -192,3 +192,6 @@ alias confibor='config push -u origin main'
 
 # Vim mode
 set -o vi
+
+# To use batcat with man
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
