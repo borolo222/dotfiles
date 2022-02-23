@@ -25,16 +25,21 @@ builddir=$(pwd)
 cd builddir || exit
 
 ## Add base packages
-apt install unzip picom bspwm polybar sddm rofi terminator thunar flameshot neofetch sxhkd  -y
+apt install unzip picom bspwm polybar sddm rofi terminator thunar flameshot -y
+apt install neofetch sxhkd kitty fonts-firacode htop lm-sensors -y
 apt install git lxpolkit lxappearance xorg arandr netselect-apt qt5ct -y
-apt install libqt5svg5 qml-module-qtquick-controls papirus-icon-theme feh kitty -y
-apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl fonts-firacode -y
+apt install libqt5svg5 qml-module-qtquick-controls papirus-icon-theme feh -y
+apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl -y
 apt install qemu-guest-agent apt-transport-https curl colortest nfs-common -y
-apt install neovim cifs-utils kcharselect htop wmctrl graphicsmagick virt-manager lm-sensors -y
+apt install neovim cifs-utils kcharselect wmctrl graphicsmagick virt-manager -y
 apt install bat vifm jq -y
 
 ## Install I3lock and dependencies
-apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util0-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y
+apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev \
+    libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev \
+    libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev \
+    libxcb-util0-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev \
+    libjpeg-dev -y
 
 ## Download i3lock-color
 git clone https://github.com/Raymo111/i3lock-color.git
@@ -80,8 +85,11 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 ## install brave
 apt install apt-transport-https curl -y
-curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg \
+    https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg \
+    arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"\
+    |sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
 apt install brave-browser -y
 
@@ -91,7 +99,8 @@ wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.g
     | gpg --dearmor \
     | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
 
-echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' \
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] \
+    https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' \
     | sudo tee /etc/apt/sources.list.d/vscodium.list
 apt update
 apt install codium -y
@@ -114,6 +123,7 @@ cp .dir_colors /home/"$username"
 cp .fonts.conf /home/"$username"
 # file for qt5ct to work - requires restart
 cp build/environment /etc/environment
+cp build/org.freedesktop.automount.pkla /etc/polkit-1/localauthority/50-local.d
 # copy directories
 cp -R .config/* /home/"$username"/.config/
 cp -R .local/* /home/"$username"/.local/
@@ -123,7 +133,8 @@ cp .config/vifm/ebnord.vifm .config/vifm/colors/ebnord.vifm
 chown -R "$username":"$username" /home/"$username"
 
 # Colorize man pages with bat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# Esto va en .bashrc
+#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ### Additional steps for VMS
 ## Polybar
