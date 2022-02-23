@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
-	<unique-id>1643240414734219-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Example for a custom action</description>
+	<icon>kitty</icon>
+	<name>Kitty Here</name>
+	<unique-id>1645558688808711-1</unique-id>
+	<command>kitty</command>
+	<description>Open Terminal here</description>
 	<patterns>*</patterns>
-	<startup-notify/>
 	<directories/>
 </action>
 </actions>

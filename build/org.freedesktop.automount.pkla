@@ -1,0 +1,6 @@
+[Allow Unauthorized mounting/Unmounting]
+Identity=unix-group:plugdev;cdrom
+Action=org.freedesktop.udisks2.filesystem-*;org.freedesktop.udisks2.eject*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
