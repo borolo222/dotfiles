@@ -23,6 +23,6 @@ disabled = true
 
 [sudo]
 style = "cyan"
-symbol = "👩 "
+symbol = " "
 disabled = false
 format = "[$symbol]($style)"
