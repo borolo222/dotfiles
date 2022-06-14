@@ -195,3 +195,6 @@ set -o vi
 
 # To use batcat with man
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+
+#test
+
