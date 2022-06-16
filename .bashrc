@@ -117,6 +117,12 @@ alias mkgz='tar -cvzf'
 alias cat='batcat'
 alias cata='batcat -A'
 
+# Alias for xprop
+alias xp='xprop'
+
+# Alias for deb packages
+alias debinst='sudo dpkg -i'
+
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>

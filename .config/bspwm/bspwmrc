@@ -63,11 +63,12 @@ bspc rule -r '*'
 
 #Rules
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Brave-browser desktop='^2' follow=on
+bspc rule -a Brave-browser desktop='^1' follow=on
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
-bspc rule -a Thunar desktop='^3' follow=on
+bspc rule -a Thunar desktop='^9' follow=on
+bspc rule -a VSCodium desktop='^3' follow=on
 bspc rule -a Pavucontrol state=floating center=true follow=on manage=true
 #bspc rule -a Yad state=floating
 bspc rule -a Synergy desktop='^10'

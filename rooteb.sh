@@ -33,6 +33,8 @@ apt install pavucontrol psmisc gucharmap dunst yad libnotify-bin playerctl -y
 apt install qemu-guest-agent apt-transport-https curl colortest nfs-common -y
 apt install neovim cifs-utils kcharselect wmctrl graphicsmagick virt-manager -y
 apt install bat vifm jq -y
+apt install bc pip nodejs fonts-noto-color-emoji apt-listchanges apt-listbugs -y
+apt install timeshift thunar-archive-plugin vlc
 
 ## Install I3lock and dependencies
 apt install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev \
